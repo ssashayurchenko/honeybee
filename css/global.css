@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Signika+Negative:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family-primary: "Open Sans", sans-serif;
+  --font-family-secondary: "Signika Negative", sans-serif;
+  --warm-brown-color: #5a3733;
+  --bright-orange-color: #eb6d2f;
+  --main-white-color: #ffffff;
+  --saturated-gray-color: #939393;
+  --pale-gray-color: #bcbcbc;
+  --pale-beige-color: #f9f4f0;
+  --warm-yellow-color: #f7bd00;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
