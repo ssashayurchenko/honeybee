@@ -1,0 +1,169 @@
+.services {
+  width: 100%;
+  height: 100vh;
+  font-family: var(--font-family-primary);
+  background-image: url(../img/services/index-services-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services__main-text {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.services__top-text {
+  font-family: var(--font-family-primary);
+  color: var(--bright-orange-color);
+  font-weight: 700;
+  font-size: clamp(10px, 2vw, 15px);
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+.services__bottom-text,
+.carousel__slide p {
+  font-family: var(--font-family-primary);
+  color: var(--warm-brown-color);
+  font-size: clamp(15px, 2vw, 17px);
+  padding-bottom: 20px;
+  font-weight: normal;
+}
+
+.services h2,
+.carousel__slide h3 {
+  font-family: var(--font-family-secondary);
+  color: var(--warm-brown-color);
+}
+.services h2 {
+  font-weight: 800;
+  font-size: clamp(30px, 5vw, 40px);
+}
+
+.services__carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.services__carousel-slides {
+  gap: 20px;
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.carousel__slide {
+  background-color: var(--main-white-color);
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.carousel__image {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel__slide h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.carousel__slide a {
+  font-size: 15px;
+  font-family: var(--font-family-primary);
+  color: var(--warm-yellow-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.carousel__slide a:hover {
+  text-decoration: underline;
+}
+
+.services__btn-prev,
+.services__btn-next {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  padding: 10px;
+}
+
+.services__btn-prev svg path,
+.services__btn-next svg path {
+  fill: var(--saturated-gray-color);
+  transition: fill 0.3s ease;
+}
+
+.services__btn-prev:hover svg path,
+.services__btn-next:hover svg path {
+  fill: var(--warm-brown-color);
+}
+
+.services__btn-prev {
+  left: 10px;
+}
+
+.services__btn-next {
+  right: 10px;
+}
+
+.services__carousel__indicators {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: none;
+  padding: 10px 0;
+}
+
+.services__carousel__indicators button {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--saturated-gray-color);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.services__carousel__indicators button.active {
+  background-color: var(--warm-brown-color);
+}
+
+@media (max-width: 768px) {
+  .carousel__slide {
+    padding: 10px;
+  }
+
+  .services__btn-prev,
+  .services__btn-next {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 758px) {
+  .carousel__slide {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 988px) {
+  .carousel__slide {
+    min-width: 33.33%;
+  }
+}

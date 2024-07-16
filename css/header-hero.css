@@ -32,6 +32,7 @@
 .header__button-buy-now a {
   display: inline-block;
   color: var(--main-white-color);
+  font-family: var(--font-family-primary);
   font-weight: 600;
   display: inline-block;
   border-radius: 10px;

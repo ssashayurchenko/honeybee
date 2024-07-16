@@ -62,7 +62,7 @@ header {
 
 @media (max-width: 1024px) {
   header {
-    background-position: 30% 50%;
+    background-position: 20% 80%;
   }
   .header__nav-list {
     display: none;
